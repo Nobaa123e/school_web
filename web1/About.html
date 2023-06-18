@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="nova-logo.png">
+    <title>About</title>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="AboutpageStyleSheet2.css" rel="stylesheet">
+    <style>
+        .nav-item hr {
+            background: tomato;
+            margin-bottom: 0;
+        }
+
+        .nav-item ul {
+            position: absolute;
+            border-radius: 5px;
+            border: 2px solid black;
+            background: Peach;
+            margin: 0 auto;
+            width: 200px;
+            display: none;
+        }
+
+        .nav-item ul li {
+            list-style: none;
+            text-indent: 10%;
+            padding: 5px;
+            display: block;
+        }
+
+        .nav-item ul li a {
+            list-style: none;
+            text-indent: 10%;
+            padding: 5px;
+            display: block;
+        }
+
+        .nav-item:hover>ul {
+            display: block;
+        }
+/* //----------------------------------------------- */
+        .ulhovering {
+            background: #6b155eb6;
+        }
+
+        #sidebar {
+            font-weight: 900;
+        }
+
+        nav #sidebar1 {
+            position: fixed;
+            height: 100vh;
+            right: -15%;
+            top: 65px;
+            background: rgba(5, 36, 17, 0.833);
+            transition: .3s ease;
+            display: block;
+            list-style-type: none;
+        }
+        nav #sidebar1 hr{
+            background: yellow;
+        }
+        nav #sidebar1.mystyle {
+            right: 0px;
+        }
+
+        nav #sidebar1 li {
+            padding: 10px;
+        }
+
+        nav #sidebar1 li a {
+            display: block;
+            
+        }
+/* ----------------------------------------------------- */
+    </style>
+</head>
+
+<body
+    style="background-image: url(https://c1.wallpaperflare.com/preview/811/367/789/technology-computer-creative-design.jpg);">
+    <center>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <img src="nova-logo.png" width="50" height="50" />
+                <a class="navbar-brand" href="Gate site.html">University of Nova Mae</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html" style="background: pink; border-radius: 5px;">About
+                                Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ALUMNI.html">ALUMNI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="cursor: default;">PORTAL STUDENT</a>
+                            <ul class="ulhovering">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Validation.html">Validation</a>
+                                    <hr>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="IP address.html">IP Address</a>
+                                    <hr>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Animation.html">Animation</a>
+                                    <hr>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html">login</a>
+                                    <hr>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="REGISTRATION FORM.html">REGISTRATION FORM</a>
+                                    <hr>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="EnrollmentForm.html">Enrollment Form</a>
+                                    <hr>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="GradingSystem.html">Grading System</a>
+                                    <hr>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="bulb.html">bulb ON/OFF</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Social Media.html">Social Media</a>
+                        </li>
+        <!-- ------------------------------------------------------- -->
+                        <li class="nav-item " id="sidebar">
+                            <a class="nav-link" href="#" onclick="newClass()">&#9776</a href="#">
+                        </li>
+                    </ul>
+                    <ul id="sidebar1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">STUDENT FORM</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="teacherform.html">TEACHER FORM</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ALUMNI.html">ALUMNI FORM</a>
+                        </li>
+                        <hr>
+                    </ul>
+        <!-- ------------------------------------------------------- -->
+                </div>
+            </nav>
+        </header>
+    </center>
+    <main role="main">
+
+        <div class="container marketing">
+
+            <hr class="featurette-divider" id="About">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">University of Nova Mae<br> <span class="text-muted">Opportunities
+                            don't happen, you create them.</span></h2>
+                    <p class="lead">“Your comfort zone is a place where you keep yourself in a self-illusion and nothing
+                        can grow there but your potentiality can grow only when you can think and grow out of that
+                        zone.”</p>
+                </div>
+
+            </div>
+            <hr class="featurette-divider">
+        </div>
+        <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2022 made by Nova Mae Tabanas &middot; <a
+                    href="https://www.privacyinternational.org/explainer/56/what-privacy">Privacy</a> &middot; <a
+                    href="https://www.contractscounsel.com/t/us/terms-and-conditions">Terms</a></p>
+        </footer>
+    </main>
+    <script>
+        function newClass() {
+            var element = document.getElementById("sidebar1");
+            element.classList.toggle("mystyle");
+        }
+    </script>
+</body>
+
+</html>

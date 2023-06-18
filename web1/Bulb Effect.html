@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<div style="background-image: url(https://st4.depositphotos.com/1092403/38805/v/600/depositphotos_388054956-stock-illustration-night-asian-street-residental-area.jpg);">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="txt.png">
+    <title>About</title>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="AboutpageStyleSheet2.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #111;
+        }
+
+        .wrapper {
+            width: 450px;
+            height: 500px;
+            position: relative;
+        }
+
+        .container1 img {
+            margin-top: -50px;
+            height: 450px;
+            width: 100%;
+            position: absolute;
+        }
+
+            .container1 img#bulb-on {
+                opacity: 0;
+                animation: glow 3s linear infinite;
+            }
+
+        @keyframes glow {
+            0% {
+                opacity: 1;
+            }
+
+            5% {
+                opacity: 1;
+            }
+
+            70% {
+                opacity: 1;
+            }
+
+            74% {
+                opacity: 0;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            84% {
+                opacity: 0;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .container1 .btn {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+            .container1 .btn span {
+                height: 50px;
+                width: 180px;
+                display: block;
+                text-align: center;
+                line-height: 48px;
+                background: none;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 20px;
+                cursor: pointer;
+                border: 2px solid #fff;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+                .container1 .btn span:hover {
+                    background: #fff;
+                    color: #111;
+                }
+
+        #btn:checked ~ .btn span {
+            background: #fff;
+            color: #111;
+        }
+
+        .container1 .btn span:before {
+            content: "Turn Off";
+        }
+
+        #btn:checked ~ img#bulb-on {
+            animation: none;
+        }
+
+        #btn:checked ~ .btn span:before {
+            content: "Turn on";
+        }
+
+        .wrapper input {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <img src="txt1.png" width="50" height="50" />
+            <a class="navbar-brand" href="#">University of Nova Mae</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#">ALUMNI</a>
+                    </li>
+					<li class="nav-item">
+                                <a class="nav-link" href="Validation.html">Validation</a>
+							</li>
+					<li class="nav-item">
+                                <a class="nav-link" href="IP address.html">IP Address</a>
+							</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="login.html">login</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="REGISTRATION FORM.html">REGISTRATION FORM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="EnrollmentForm.html">Enrollment Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GradingSystem.html">Grading System</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">bulb ON/OFF</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+					<li class="nav-item">
+					    <a class="nav-link" href="Social Media.html">Social Media</a>
+					</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container1">
+        <div class="wrapper">
+            <input type="checkbox" id="btn">
+            <img id="bulb-off" src="#">
+            <img id="bulb-on" src="#">
+            <label for="btn" class="btn">
+                <span></span>
+            </label>
+        </div>
+    </div>
+</body>
+</html>

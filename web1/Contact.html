@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <meta charset="utf-8" />
+    <title>HomePage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" href="nova-logo.png">
+    <link rel="stylesheet" href="glenStylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+			background-image: url(https://avatars.mds.yandex.net/i?id=9f85a24b4f0ae6c69407b1de2977f04aa1cf3810-8500949-images-thumbs&n=13);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .nav {
+            top: 0;
+            position: relative;
+            justify-content: center;
+            border: 3px solid black;
+            border-radius: 10px;
+            display: block;
+            background-color: peach;
+            margin: 50px auto;
+            padding: 40px;
+            width: min(100% - 2em, 820px);
+            height: 100%;
+            transition: .2s ease;
+        }
+
+        form div {
+            padding-bottom: 5px;
+        }
+
+        .btn {
+            margin-right: 20px;
+        }
+
+            .btn:hover {
+                margin-right: 20px;
+                box-shadow: 5px 5px 20px tomato;
+            }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>Contact us</h1>
+        <form class="needs-validation" novalidate action="Message.html">
+            <div class="form-group">
+                <label for="validationTooltipEmail">Email</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="validationTooltipEmail" placeholder="Please input the valid email" aria-describedby="validationTooltipEmailPrepend" required>
+                    <div class="invalid-tooltip">
+                        Please choose a unique and valid username.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message us</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <button class="btn btn-success" type="submit">Send</button>
+            <button class="btn btn-secondary" type="reset" onclick="window.location.href = 'About.html';">Cancel</button>
+
+        </form>
+    </div>
+</body>
+</html>

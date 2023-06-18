@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="nova-logo.png">
+    <title>About</title>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="AboutpageStyleSheet2.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        body {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            color: #5a5a5a;
+            background: #111;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 450px;
+            height: 500px;
+            position: relative;
+            justify-content: center;
+        }
+
+        container1 {
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            top: 50px;
+        }
+
+        .container1 img {
+            margin-top: -50px;
+            height: 450px;
+            width: 100%;
+            position: absolute;
+        }
+
+            .container1 img#bulb-on {
+                opacity: 0;
+                animation: glow 3s linear infinite;
+            }
+
+        @keyframes glow {
+            0% {
+                opacity: 1;
+            }
+
+            5% {
+                opacity: 1;
+            }
+
+            70% {
+                opacity: 1;
+            }
+
+            74% {
+                opacity: 0;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            84% {
+                opacity: 0;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .container1 .btn {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+            .container1 .btn span {
+                height: 50px;
+                width: 180px;
+                display: block;
+                text-align: center;
+                line-height: 48px;
+                background: none;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 20px;
+                cursor: pointer;
+                border: 2px solid #fff;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+                .container1 .btn span:hover {
+                    background: #fff;
+                    color: #111;
+                }
+
+        #btn:checked ~ .btn span {
+            background: #fff;
+            color: #111;
+        }
+
+        .container1 .btn span:before {
+            content: "Turn Off";
+        }
+
+        #btn:checked ~ img#bulb-on {
+            animation: none;
+        }
+
+        #btn:checked ~ .btn span:before {
+            content: "Turn on";
+        }
+
+        .wrapper input {
+            display: none;
+        }
+
+
+
+        .nav-item hr {
+            background: #808080;
+            margin-bottom: 0;
+        }
+
+        .nav-item ul {
+            position: absolute;
+            border-radius: 5px;
+            border: 2px solid #808080;
+            background: #343a40;
+            width: 200px;
+            display: none;
+        }
+
+            .nav-item ul li {
+                list-style: none;
+                text-indent: 10%;
+                padding: 5px;
+                display: block;
+            }
+
+                .nav-item ul li a {
+                    list-style: none;
+                    text-indent: 10%;
+                    padding: 5px;
+                    display: block;
+                }
+
+        .nav-item:hover > ul {
+            display: block;
+        }
+        /* //----------------------------------------------- */
+        .ulhovering {
+            background: #6b155eb6;
+        }
+
+        #sidebar {
+            font-weight: 900;
+        }
+
+        nav #sidebar1 {
+            position: fixed;
+            height: 100vh;
+            right: -15%;
+            top: 65px;
+            background: rgba(5, 36, 17, 0.833);
+            transition: .3s ease;
+            display: block;
+            list-style-type: none;
+        }
+        nav #sidebar1 hr{
+            background: yellow;
+        }
+        nav #sidebar1.mystyle {
+            right: 0px;
+        }
+
+        nav #sidebar1 li {
+            padding: 10px;
+        }
+
+        nav #sidebar1 li a {
+            display: block;
+            
+        }
+        #bulb-off{
+            width: 77%;
+            height: 106%;
+            transform: translate(52px, -43px);
+            overflow: hidden;
+            opacity: .3;
+        }
+/* ----------------------------------------------------- */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <img src="nova-logo.png" width="50" height="50" />
+            <a class="navbar-brand" href="Gate site.html">University of Nova Mae</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+					  <li class="nav-item">
+                        <a class="nav-link" href="ALUMNI.html">ALUMNI</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: default; background: tomato; border-radius: 5px;">PORTAL STUDENT</a>
+                        <ul>
+						    <li class="nav-item">
+                                <a class="nav-link" href="Validation.html">Validation</a>
+                                <hr>
+							</li>
+						    <li class="nav-item">
+                                <a class="nav-link" href="IP address.html">IP Address</a>
+                                <hr>
+							</li>
+						    <li class="nav-item">
+                                <a class="nav-link" href="login.html">login</a>
+                                <hr>
+                            </li>
+							<li class="nav-item">
+                                <a class="nav-link" href="REGISTRATION FORM.html">REGISTRATION FORM</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="EnrollmentForm.html">Enrollment Form</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="GradingSystem.html" >Grading System</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="bulb.html" style="background: #808080; border-radius: 5px;">bulb ON/OFF</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+					<li class="nav-item">
+					    <a class="nav-link" href="Social Media.html">Social Media</a>
+					<!-- ------------------------------------------------------- -->
+                    <li class="nav-item " id="sidebar">
+                        <a class="nav-link" href="#" onclick="newClass()">&#9776</a href="#">
+                    </li>
+                </ul>
+                <ul id="sidebar1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">STUDENT FORM</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teacherform.html">TEACHER FORM</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ALUMNI.html">ALUMNI FORM</a>
+                    </li>
+                    <hr>
+                </ul>
+    <!-- ------------------------------------------------------- -->
+            </div>
+        </nav>
+    </header>
+    <div class="container1">
+        <div class="wrapper">
+            <input type="checkbox" id="btn">
+            <img id="bulb-off" src="bulb-off.png">
+            <img id="bulb-on" src="bulb-on.png">
+            <label for="btn" class="btn">
+                <span></span>
+            </label>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
+    <script>
+        function newClass() {
+            var element = document.getElementById("sidebar1");
+            element.classList.toggle("mystyle");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<div style="background-image: url(https://img.freepik.com/free-vector/computer-background-design_1212-545.jpg?w=2000);">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="nova-logo.png">
+    <title>Grading System</title>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="NovaStylesheet.css">
+    <link href="AboutpageStyleSheet2.css" rel="stylesheet">
+    <style>
+	    body {
+  background-image: url(https://c1.wallpaperflare.com/preview/811/367/789/technology-computer-creative-design.jpg);
+}
+        .nav-item hr {
+            background: black;
+            margin-bottom: 0;
+        }
+
+        .nav-item ul {
+            position: absolute;
+            border-radius: 5px;
+            border: 2px solid purple;
+            background:tomato;
+            margin: 0 auto;
+            padding: 0;
+            width: 200px;
+            display: none;
+        }
+
+            .nav-item ul li {
+                list-style: none;
+                text-indent: 10%;
+                padding: 5px;
+                display: block;
+            }
+
+                .nav-item ul li a {
+                    list-style: none;
+                    text-indent: 10%;
+                    padding: 5px;
+                    display: block;
+                }
+
+        .nav-item:hover > ul {
+            display: block;
+        }
+        /* //----------------------------------------------- */
+        .ulhovering {
+            background: #6b155eb6;
+        }
+
+        #sidebar {
+            font-weight: 900;
+        }
+
+        nav #sidebar1 {
+            position: fixed;
+            height: 100vh;
+            right: -15%;
+            top: 65px;
+            background: rgba(5, 36, 17, 0.833);
+            transition: .3s ease;
+            display: block;
+            list-style-type: none;
+        }
+        nav #sidebar1 hr{
+            background: yellow;
+        }
+        nav #sidebar1.mystyle {
+            right: 0px;
+        }
+
+        nav #sidebar1 li {
+            padding: 10px;
+        }
+
+        nav #sidebar1 li a {
+            display: block;
+            
+        }
+        section{
+            background-image: url(https://avatars.mds.yandex.net/i?id=9f85a24b4f0ae6c69407b1de2977f04aa1cf3810-8500949-images-thumbs&n=13);
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: blur(20px);
+            color: rgba(61, 55, 55, 0.829);
+            font-weight: bold;
+        }
+/* ----------------------------------------------------- */
+    </style>
+</head>
+<body>
+    <center>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <img src="nova-logo.png" width="50" height="50" />
+            <a class="navbar-brand" href="HomePage.html">University of Nova Mae</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html" >About</a>
+                    </li>
+					 <li class="nav-item">
+                        <a class="nav-link" href="ALUMNI.html">ALUMNI</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: default; background: pink; border-radius: 5px;">PORTAL  STUDENT</a>
+                        <ul>
+						    <li class="nav-item">
+                                <a class="nav-link" href="Validation.html">Validation</a>
+                                <hr>
+							</li>
+						    <li class="nav-item">
+                                <a class="nav-link" href="IP address.html">IP Address</a>
+                                <hr>
+							</li>
+						    <li class="nav-item">
+                                <a class="nav-link" href="Animation.html">Animation</a>
+                                <hr>
+                            </li>
+						    <li class="nav-item">
+                                <a class="nav-link" href="login.html">login</a>
+                                <hr>
+                            </li>
+							<li class="nav-item">
+                                <a class="nav-link" href="REGISTRATION FORM.html">REGISTRATION FORM</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="EnrollmentForm.html">Enrollment Form</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="GradingSystem.html" style="background: tomato; border-radius: 5px;">Grading System</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="bulb.html">bulb ON/OFF</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+					<li class="nav-item">
+					    <a class="nav-link" href="Social Media.html">Social Media</a>
+					<!-- ------------------------------------------------------- -->
+                    <li class="nav-item " id="sidebar">
+                        <a class="nav-link" href="#" onclick="newClass()">&#9776</a href="#">
+                    </li>
+                </ul>
+                <ul id="sidebar1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">STUDENT FORM</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teacherform.html">TEACHER FORM</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ALUMNI.html">ALUMNI FORM</a>
+                    </li>
+                    <hr>
+                </ul>
+    <!-- ------------------------------------------------------- -->
+                <form class="form-inline mt-2 mt-md-0" action="https://www.google.com/search" method="get">
+                </form>
+            </div>
+        </nav>
+    </header>
+    </center>
+    <section>
+        <div class="container">
+		    <br><br>
+            <h2>Percentage for your Score.</h2>
+            <hr />
+            <label>Actual Score:</label>
+            <input type="text" name="num1" id="num1" placeholder="Enter your score"><br><br>
+            <label>Perfect Score:</label>
+            <input type="text" name="num2" id="num2" placeholder="Enter the perfect score"><br><br>
+            <button type="submit" class="btn btn-info" onclick="rating()">Eq.Rating</button><br>
+
+            <button type="submit" class="btn btn-info" onclick="percentage()">Eq.Percentage</button>
+            <p style="margin-top: 15px;">Result: </p>
+
+            <p id="demo2"></p>
+            <br id="about">
+        </div>
+        <script>
+            function rating() {
+                var a, b, rating, text, score;
+                a = document.getElementById("num1").value;
+                b = document.getElementById("num2").value;
+
+                score = (a / b);
+                if (score < 0.6) {
+                    rating = 5 - ((10 * score) / 3);
+                    text = rating.toFixed(1) + "<b><br><br><u>Failed</u></b>";
+                }
+                else {
+                    rating = 6 - (5 * score);
+                    if (score == 1) {
+                        text = rating.toFixed(1) + "<b><br><br><u>Perfect</u><b>";
+                    }
+                    else {
+                        text = rating.toFixed(1) + "<br><br><b><u>Passed</u></b>";
+                    }
+
+                }
+                document.getElementById("demo2").innerHTML = "<u>Your Score is " + a + "</u>.<br><br>Equivalent Rating: " + text;
+            }
+
+            function percentage() {
+                var a, b, score;
+                a = document.getElementById("num1").value;
+                b = document.getElementById("num2").value;
+                score = (a / b) * 100;
+                text = score.toFixed(2);
+                document.getElementById("demo2").innerHTML = "<u>Your Score is " + a + "</u>.<br><br>Equivalent Percentage: " + text + "%";
+            }
+        </script>
+    </section>
+    <script>
+        function newClass() {
+            var element = document.getElementById("sidebar1");
+            element.classList.toggle("mystyle");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="image/png"
+		href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrV8hK6VPo2Z5iTecmANLXcIFoLSK0j9rmQA&usqp=CAU">
+
+	<title>Alumni Login Form</title>
+	<style>
+		body {
+			background-image: url(https://avatars.mds.yandex.net/i?id=9f85a24b4f0ae6c69407b1de2977f04aa1cf3810-8500949-images-thumbs&n=13);
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: rgba(31, 30, 33, 0.764);
+			font-weight: 900;
+		}
+
+		p.solid {
+			background-color: peach;
+			border: 10px solid;
+			text-align: center;
+			width: 50%;
+			padding: 0 30px;
+			border-radius: 10px;
+		}
+		
+        form h1{
+            text-align: center;
+        }
+        form input{
+            display: block;
+            width: 100%;
+            padding: 5px;
+			
+        }
+        form label{
+            margin-top: 10px;
+        }
+		form {
+            top: 0;
+            position: relative;
+            justify-content: center;
+            border: 3px solid black;
+            border-radius: 10px;
+            display: block;
+            margin: 50px auto;
+            
+            width: min(100% - 10rem, 700px);
+            transition: .2s ease;
+            box-shadow: 10px 10px 20px tomato;
+            background: rgba(135, 207, 235, 0.207);
+            backdrop-filter: blur(10px);
+        }
+		ul{
+			list-style-type: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		input[type=submit]{
+			cursor: pointer;
+			border-radius: 10px;
+			padding: 10px;
+			border: none;
+			outline: none;
+			box-shadow: 0 10px 10px rgba(201, 201, 58, 0.545);
+		}
+		input[type=submit]:hover{
+			background: rgba(71, 211, 118, 0.783);
+			box-shadow: 0 10px 10px yellow;
+		}
+		label{
+			float: left;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<form action="#">
+		<h2>Alumni Log in Form</h2>
+		<p class="solid">
+			<br><br>
+			<label for="#"> Username : </label><input type="text" name="username" required>
+			<br><br>
+			<label for="#"> Password : </label><input type="password" required autocomplete="off" />
+			<br><br>
+			<input type="submit" class="button button-block" name="submit" value="Log In">
+			<br><br>
+			<br><br>
+		</p>
+		Don't have an Account yet?
+		<ul>
+			<li><a href="REGISTRATION FORM.html">Sign up</a> </li>
+		</ul>
+		</form>
+	</center>
+</body>
+
+</html>

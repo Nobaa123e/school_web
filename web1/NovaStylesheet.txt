@@ -1,0 +1,74 @@
+﻿
+section {
+    position: relative;
+    padding-top: 30px;
+    display: block;
+    width: 100%;
+    justify-content: center;
+    background-color: #80948c12; 
+}
+
+    section .container {
+        position: relative;
+        border: 3px ridge #fcff04;
+        width: min(100% - 3em, 850px);
+        padding: 20px;
+        background: #35f0f6;
+        border-radius: 50px 50px 0 0;
+        text-align: justify;
+        margin: 50px auto;
+        box-shadow: inset 10px 10px 20px white, 5px 4px 5px rgb(172, 86, 86, 0.94), 10px 20px 10px rgb(123, 252, 34);
+    }
+
+        section .container h2 {
+            position: relative;
+            padding: 5px;
+            text-align: center;
+            color: #c76464;
+            margin: 10px auto;
+        }
+
+.btn-info,
+p,
+label,
+input {
+    margin: 4px 10px;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+p#demo,
+p#demo2 {
+    background: #c1ede2;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #ee9629;
+    border-radius: 5px;
+}
+
+.btn-info {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 20px;
+    background: #aaa322d2;
+    border-radius: 4px;
+    transition: .2s ease;
+    margin-left: 30px;
+    box-shadow: 5px 0 10px #3b1b64;
+    color: yellow;
+}
+
+    .btn-info:hover {
+        background: #63ff9bec;
+        box-shadow: 5px 0 10px #57a793e2;
+        color: black;
+    }
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    background: rgb(251, 241, 161);
+    width: 50%;
+}

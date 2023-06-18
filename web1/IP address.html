@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IP ADDRESS</title>
+		<style>
+	        body {
+                background-image: url(https://avatars.mds.yandex.net/i?id=9f85a24b4f0ae6c69407b1de2977f04aa1cf3810-8500949-images-thumbs&n=13);
+			background-repeat: no-repeat;
+			background-size: cover;
+            }
+	        p.solid {
+	        border: 10px solid;
+	        text-align: center;
+	        width: 50%;
+	        }
+			h2{
+			text-align: center;
+			}
+			h3 {
+            text-align: center;
+            }
+            container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+	</style>
+    </head>
+    <body>
+	<center>
+            <div class ="container">
+			 <h2>IP ADDRESS</h2>
+			 <hr/>
+			 <h3><br>VALIDATE OF RANGE OF INPUT NUMBERS</h3>
+            <label>Number:</label>
+            <input type="number" name="number" id="number" placeholder="Enter a number"><br>
+            <button type="submit" class="btn" onclick="classes()">Submit</button>
+			<p><br>Result:</p>
+			<p id="demo">Class?<br></p>
+    <script>
+	 function classes() {
+    var classA = "Class A";
+    var classB = "Class B";
+    var classC = "Class C";
+    var A = document.getElementById("number").value;
+
+    if (A >=1 && A <= 233) {
+
+        if (A >= 1 && A <=126){
+            text = "Class A <br />";
+        }
+        else if(A >= 127 && A <= 191){
+            text = "Class B <br />";
+        }
+        else {
+            text = "Class C <br />";
+        }
+    }
+    else{
+        alert("Invalid");
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+    </script>
+	</center>
+    </body>
+</html>
